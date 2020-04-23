@@ -1,7 +1,7 @@
 ```{r data generation, echo = FALSE, results = "hide", warning = FALSE, error = FALSE, message = FALSE}
 library(readr)
 library(tidyverse)
-df <- read_csv("/home/adrien/Teaching/moodle/data/irregular-verbs.csv",  col_names=TRUE)
+df <- read_csv("/home/adrien/Databases/irregular-verbs.csv",  col_names=TRUE)
 # number of questions
 n=20
 # number of blanks per question
@@ -17,7 +17,11 @@ exsolution <- as.vector(t(allsolutions[,1:o]))
 Question
 ========
 
+**Read [this page](https://adrienmeli.github.io/irregular-verbs/).**
+
 Fill in the following table:
+
+***
 
 ```{r, echo = FALSE}
 

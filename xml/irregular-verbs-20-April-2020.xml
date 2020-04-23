@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+
+<question type="category">
+<category>
+<text>$course$/irregular-verbs-20-April-2020/exercises/irregular-verbs.Rmd</text>
+</category>
+</question>
+
+
+<question type="cloze">
+<name>
+<text> Q1 : exercises_irregular-verbs </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[<p>
+<p>Remplissez le tableau suivant :</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Base Verbale</th>
+<th align="left">Prétérit</th>
+<th align="left">Participe passé</th>
+<th align="left">Traduction</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"> {1:SHORTANSWER:%100%ring~%100%ring}</td>
+<td align="left"> {1:SHORTANSWER:%100%rang~%100%rang}</td>
+<td align="left"> {1:SHORTANSWER:%100%rung~%100%rung}</td>
+<td align="left">sonner</td>
+</tr>
+<tr class="even">
+<td align="left"> {1:SHORTANSWER:%100%let~%100%let}</td>
+<td align="left"> {1:SHORTANSWER:%100%let~%100%let}</td>
+<td align="left"> {1:SHORTANSWER:%100%let~%100%let}</td>
+<td align="left">laisser</td>
+</tr>
+<tr class="odd">
+<td align="left"> {1:SHORTANSWER:%100%know~%100%know}</td>
+<td align="left"> {1:SHORTANSWER:%100%knew~%100%knew}</td>
+<td align="left"> {1:SHORTANSWER:%100%known~%100%known}</td>
+<td align="left">savoir</td>
+</tr>
+<tr class="even">
+<td align="left"> {1:SHORTANSWER:%100%stand~%100%stand}</td>
+<td align="left"> {1:SHORTANSWER:%100%stood~%100%stood}</td>
+<td align="left"> {1:SHORTANSWER:%100%stood~%100%stood}</td>
+<td align="left">se tenir debout</td>
+</tr>
+<tr class="odd">
+<td align="left"> {1:SHORTANSWER:%100%hurt~%100%hurt}</td>
+<td align="left"> {1:SHORTANSWER:%100%hurt~%100%hurt}</td>
+<td align="left"> {1:SHORTANSWER:%100%hurt~%100%hurt}</td>
+<td align="left">faire mal</td>
+</tr>
+<tr class="even">
+<td align="left"> {1:SHORTANSWER:%100%sting~%100%sting}</td>
+<td align="left"> {1:SHORTANSWER:%100%stung~%100%stung}</td>
+<td align="left"> {1:SHORTANSWER:%100%stung~%100%stung}</td>
+<td align="left">piquer</td>
+</tr>
+<tr class="odd">
+<td align="left"> {1:SHORTANSWER:%100%teach~%100%teach}</td>
+<td align="left"> {1:SHORTANSWER:%100%taught~%100%taught}</td>
+<td align="left"> {1:SHORTANSWER:%100%taught~%100%taught}</td>
+<td align="left">enseigner</td>
+</tr>
+<tr class="even">
+<td align="left"> {1:SHORTANSWER:%100%sleep~%100%sleep}</td>
+<td align="left"> {1:SHORTANSWER:%100%slept~%100%slept}</td>
+<td align="left"> {1:SHORTANSWER:%100%slept~%100%slept}</td>
+<td align="left">dormir</td>
+</tr>
+<tr class="odd">
+<td align="left"> {1:SHORTANSWER:%100%make~%100%make}</td>
+<td align="left"> {1:SHORTANSWER:%100%made~%100%made}</td>
+<td align="left"> {1:SHORTANSWER:%100%made~%100%made}</td>
+<td align="left">fabriquer</td>
+</tr>
+<tr class="even">
+<td align="left"> {1:SHORTANSWER:%100%quit~%100%quit}</td>
+<td align="left"> {1:SHORTANSWER:%100%quit~%100%quit}</td>
+<td align="left"> {1:SHORTANSWER:%100%quit~%100%quit}</td>
+<td align="left">arrêter</td>
+</tr>
+<tr class="odd">
+<td align="left"> {1:SHORTANSWER:%100%begin~%100%begin}</td>
+<td align="left"> {1:SHORTANSWER:%100%began~%100%began}</td>
+<td align="left"> {1:SHORTANSWER:%100%begun~%100%begun}</td>
+<td align="left">commencer</td>
+</tr>
+<tr class="even">
+<td align="left"> {1:SHORTANSWER:%100%do~%100%do}</td>
+<td align="left"> {1:SHORTANSWER:%100%did~%100%did}</td>
+<td align="left"> {1:SHORTANSWER:%100%done~%100%done}</td>
+<td align="left">faire (auxiliaire)</td>
+</tr>
+<tr class="odd">
+<td align="left"> {1:SHORTANSWER:%100%shrink~%100%shrink}</td>
+<td align="left"> {1:SHORTANSWER:%100%shrank~%100%shrank}</td>
+<td align="left"> {1:SHORTANSWER:%100%shrunk~%100%shrunk}</td>
+<td align="left">rétrécir</td>
+</tr>
+<tr class="even">
+<td align="left"> {1:SHORTANSWER:%100%drink~%100%drink}</td>
+<td align="left"> {1:SHORTANSWER:%100%drank~%100%drank}</td>
+<td align="left"> {1:SHORTANSWER:%100%drunk~%100%drunk}</td>
+<td align="left">boire</td>
+</tr>
+<tr class="odd">
+<td align="left"> {1:SHORTANSWER:%100%feed~%100%feed}</td>
+<td align="left"> {1:SHORTANSWER:%100%fed~%100%fed}</td>
+<td align="left"> {1:SHORTANSWER:%100%fed~%100%fed}</td>
+<td align="left">nourrir</td>
+</tr>
+<tr class="even">
+<td align="left"> {1:SHORTANSWER:%100%write~%100%write}</td>
+<td align="left"> {1:SHORTANSWER:%100%wrote~%100%wrote}</td>
+<td align="left"> {1:SHORTANSWER:%100%written~%100%written}</td>
+<td align="left">écrire</td>
+</tr>
+<tr class="odd">
+<td align="left"> {1:SHORTANSWER:%100%speed~%100%speed}</td>
+<td align="left"> {1:SHORTANSWER:%100%sped~%100%sped}</td>
+<td align="left"> {1:SHORTANSWER:%100%sped~%100%sped}</td>
+<td align="left">aller très/trop vite</td>
+</tr>
+<tr class="even">
+<td align="left"> {1:SHORTANSWER:%100%see~%100%see}</td>
+<td align="left"> {1:SHORTANSWER:%100%saw~%100%saw}</td>
+<td align="left"> {1:SHORTANSWER:%100%seen~%100%seen}</td>
+<td align="left">voir</td>
+</tr>
+<tr class="odd">
+<td align="left"> {1:SHORTANSWER:%100%shut~%100%shut}</td>
+<td align="left"> {1:SHORTANSWER:%100%shut~%100%shut}</td>
+<td align="left"> {1:SHORTANSWER:%100%shut~%100%shut}</td>
+<td align="left">fermer</td>
+</tr>
+<tr class="even">
+<td align="left"> {1:SHORTANSWER:%100%breed~%100%breed}</td>
+<td align="left"> {1:SHORTANSWER:%100%bred~%100%bred}</td>
+<td align="left"> {1:SHORTANSWER:%100%bred~%100%bred}</td>
+<td align="left">élever</td>
+</tr>
+</tbody>
+</table>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Base Verbale</th>
+<th align="left">Prétérit</th>
+<th align="left">Participe passé</th>
+<th align="left">Traduction</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">ring</td>
+<td align="left">rang</td>
+<td align="left">rung</td>
+<td align="left">sonner</td>
+</tr>
+<tr class="even">
+<td align="left">let</td>
+<td align="left">let</td>
+<td align="left">let</td>
+<td align="left">laisser</td>
+</tr>
+<tr class="odd">
+<td align="left">know</td>
+<td align="left">knew</td>
+<td align="left">known</td>
+<td align="left">savoir</td>
+</tr>
+<tr class="even">
+<td align="left">stand</td>
+<td align="left">stood</td>
+<td align="left">stood</td>
+<td align="left">se tenir debout</td>
+</tr>
+<tr class="odd">
+<td align="left">hurt</td>
+<td align="left">hurt</td>
+<td align="left">hurt</td>
+<td align="left">faire mal</td>
+</tr>
+<tr class="even">
+<td align="left">sting</td>
+<td align="left">stung</td>
+<td align="left">stung</td>
+<td align="left">piquer</td>
+</tr>
+<tr class="odd">
+<td align="left">teach</td>
+<td align="left">taught</td>
+<td align="left">taught</td>
+<td align="left">enseigner</td>
+</tr>
+<tr class="even">
+<td align="left">sleep</td>
+<td align="left">slept</td>
+<td align="left">slept</td>
+<td align="left">dormir</td>
+</tr>
+<tr class="odd">
+<td align="left">make</td>
+<td align="left">made</td>
+<td align="left">made</td>
+<td align="left">fabriquer</td>
+</tr>
+<tr class="even">
+<td align="left">quit</td>
+<td align="left">quit</td>
+<td align="left">quit</td>
+<td align="left">arrêter</td>
+</tr>
+<tr class="odd">
+<td align="left">begin</td>
+<td align="left">began</td>
+<td align="left">begun</td>
+<td align="left">commencer</td>
+</tr>
+<tr class="even">
+<td align="left">do</td>
+<td align="left">did</td>
+<td align="left">done</td>
+<td align="left">faire (auxiliaire)</td>
+</tr>
+<tr class="odd">
+<td align="left">shrink</td>
+<td align="left">shrank</td>
+<td align="left">shrunk</td>
+<td align="left">rétrécir</td>
+</tr>
+<tr class="even">
+<td align="left">drink</td>
+<td align="left">drank</td>
+<td align="left">drunk</td>
+<td align="left">boire</td>
+</tr>
+<tr class="odd">
+<td align="left">feed</td>
+<td align="left">fed</td>
+<td align="left">fed</td>
+<td align="left">nourrir</td>
+</tr>
+<tr class="even">
+<td align="left">write</td>
+<td align="left">wrote</td>
+<td align="left">written</td>
+<td align="left">écrire</td>
+</tr>
+<tr class="odd">
+<td align="left">speed</td>
+<td align="left">sped</td>
+<td align="left">sped</td>
+<td align="left">aller très/trop vite</td>
+</tr>
+<tr class="even">
+<td align="left">see</td>
+<td align="left">saw</td>
+<td align="left">seen</td>
+<td align="left">voir</td>
+</tr>
+<tr class="odd">
+<td align="left">shut</td>
+<td align="left">shut</td>
+<td align="left">shut</td>
+<td align="left">fermer</td>
+</tr>
+<tr class="even">
+<td align="left">breed</td>
+<td align="left">bred</td>
+<td align="left">bred</td>
+<td align="left">élever</td>
+</tr>
+</tbody>
+</table>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>60</defaultgrade>
+</question>
+
+</quiz>

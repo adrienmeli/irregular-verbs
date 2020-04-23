@@ -1,0 +1,52 @@
+```{r data generation, echo = FALSE, results = "hide", warning = FALSE, error = FALSE, message = FALSE}
+library(readr)
+library(tidyverse)
+df <- read_csv("/home/adrien/Teaching/moodle/data/irregular-verbs.csv",  col_names=TRUE)
+# number of questions
+n=20
+# number of blanks per question
+o = 3
+# total number of blanks
+m=o*n
+j <- sample(1:nrow(df), n)
+allquestions  <-  df[j,o+1]
+allsolutions <- df[j,]
+exsolution <- as.vector(t(allsolutions[,1:o]))
+```
+
+Question
+========
+
+Fill in the following table:
+
+```{r, echo = FALSE}
+
+endhash = sprintf("%s##",seq(1:m))
+answers = sprintf("##ANSWER%s", endhash)
+
+answertable <- matrix(answers, ncol=o, byrow=TRUE)
+answertable <- cbind(answertable,allquestions)
+answertable <- as_tibble(answertable)
+colnames(answertable) <- colnames(df)
+
+
+
+knitr::kable(answertable)
+```
+
+Solution
+========
+
+```{r, echo = FALSE}
+knitr::kable(df[j,])
+```
+
+
+
+Meta-information
+================
+extype: cloze
+exsolution: `r paste(exsolution, collapse = "|")`
+exclozetype: `r paste(rep("string",m),collapse = "|")`
+exname: Irregular Verbs
+

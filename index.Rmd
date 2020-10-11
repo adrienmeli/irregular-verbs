@@ -9,13 +9,13 @@ link-citations: true
 numbersections: true
 fontsize: 10pt
 output: 
-  prettydoc::html_pretty:
-    theme: architect
+  rmdformats::material:
     self_contained: true
     highlight: haddock
     fig_width: 4
     fig_height: 3
     fig_caption: true
+    use_bookdown: false
   bookdown::pdf_document2:
     keep_tex: false
     toc: false
@@ -45,9 +45,11 @@ knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE, fig.align 
 
 ```
 
-`r ifpdf("", "[*(Download PDF)*](index.pdf)")`
+
+
 
 # Principes
+
 
 Les verbes irréguliers s'apprennent en trois colonnes : 
 
@@ -109,12 +111,10 @@ Le participe passé s'emploie avec *HAVE* ou *BE*.
 
 ## Conjugaisons de "BE"
 
-:::::: {.columns}
 
 
-::: {.column width="47%" data-latex="{0.47\textwidth}"}
 
-
+### "BE" au présent
 
 ```{r bepresent}
 
@@ -125,7 +125,7 @@ if (knitr::is_latex_output()) {
   knitr::kable(df, "latex", booktabs = T) %>%
   # column_spec(1, bold = T, width = "3cm") %>%
   # collapse_rows(columns = 1:2, valign = "top",latex_hline = "none") %>%
-  kable_styling(latex_options = c("scale_down", "striped"),position = "center")
+  kable_styling(latex_options = c( "striped"),position = "center")
   #kable_styling(latex_options = c("striped"),position = "center")
 
 } else if (knitr::is_html_output()) {
@@ -139,16 +139,8 @@ kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive
 ```
 
 
-:::
 
-::: {.column width="6%" data-latex="{0.06\textwidth}"}
-\
-<!-- an empty Div (with a white space), serving as
-a column separator -->
-:::
-
-::: {.column width="47%" data-latex="{0.47\textwidth}"}
-
+### "BE" au prétérit
 
 ```{r bepreterit}
 
@@ -159,7 +151,7 @@ if (knitr::is_latex_output()) {
   knitr::kable(df, "latex", booktabs = T) %>%
   # column_spec(1, bold = T, width = "3cm") %>%
   # collapse_rows(columns = 1:2, valign = "top",latex_hline = "none") %>%
-  kable_styling(latex_options = c("scale_down", "striped"),position = "center")
+  kable_styling(latex_options = c( "striped"),position = "center")
   #kable_styling(latex_options = c("striped"),position = "center")
 
 } else if (knitr::is_html_output()) {
@@ -172,32 +164,38 @@ kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive
 } 
 ```
 
-:::
-::::::
 
 ***
 
 # Tableau des verbes irréguliers
 
-```{r tableau }
 
-library(tidyverse)
-df <- read_csv("/home/adrien/databases/csv/irregular-verbs.csv",  col_names=TRUE)
+
+
+
+```{r irreg}
+
+df = read.csv("/home/adrien/databases/csv/irregular-verbs.csv",sep=';', check.names = F)
 
 if (knitr::is_latex_output()) {
+  #knitr::kable(df, "latex", booktabs = T, col.names=NULL) %>%
   knitr::kable(df, "latex", booktabs = T, longtable = T) %>%
-    column_spec(c(1,4), bold = T, width = "3cm") %>%
-    collapse_rows(columns = 1:2, valign = "top",latex_hline = "none") %>%
-    kable_styling(latex_options = c("scale_down","striped"),position = "center")
+  column_spec(1, bold = T) %>%
+  column_spec(4, bold = T) %>%
+  # collapse_rows(columns = 1:2, valign = "top",latex_hline = "none") %>%
+  #kable_styling(latex_options = c("scale_down"),position = "center")
+  kable_styling(latex_options = c("striped"),position = "center")
 
 } else if (knitr::is_html_output()) {
-  knitr::kable(df,  captions=NULL) %>%
-    kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
-    column_spec(c(1,4), bold = T) %>%
-    collapse_rows(columns = 1:2, valign = "top")
+#knitr::kable(df, col.names=NULL, captions=NULL) %>%
+knitr::kable(df, captions=NULL) %>%
+  column_spec(1, bold = T) %>%
+  column_spec(4, bold = T) %>%
+#  column_spec(1, bold = T) %>%
+# collapse_rows(columns = 1:2, valign = "top") %>%
+kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) 
 
 } 
 ```
 
-
-
+# `r ifpdf("", "[*(Download PDF)*](index.pdf)")`

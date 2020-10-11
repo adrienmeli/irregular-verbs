@@ -1,0 +1,34 @@
+
+
+processing file: index.Rmd
+Parsed with column specification:
+cols(
+  `Base Verbale` = col_character(),
+  Prétérit = col_character(),
+  `Participe passé` = col_character(),
+  Traduction = col_character()
+)
+output file: index.knit.md
+
+
+Output created: index.html
+
+
+processing file: index.Rmd
+Parsed with column specification:
+cols(
+  `Base Verbale` = col_character(),
+  Prétérit = col_character(),
+  `Participe passé` = col_character(),
+  Traduction = col_character()
+)
+output file: index.knit.md
+
+! LaTeX Error: Not in outer par mode.
+
+Error: LaTeX failed to compile index.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See index.log for more info.
+In addition: Warning messages:
+1: MathJax doesn't work with self_contained when not using the rmarkdown "default" template. 
+2: In styling_latex_scale_down(out, table_info) :
+  Longtable cannot be resized.
+Execution halted

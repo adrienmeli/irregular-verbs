@@ -2,50 +2,35 @@
 author: "Adrien Méli"
 title: "Les verbes irréguliers anglais"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
-bibliography: /home/adrien/github/dotfiles/tex/biblio.bib
-biblio-style: "apalike"
-always_allow_html: true
-link-citations: true
-numbersections: true
-fontsize: 10pt
 output: 
   prettydoc::html_pretty:
-    theme: architect
-    self_contained: true
-    highlight: haddock
-    fig_width: 4
-    fig_height: 3
-    fig_caption: true
-  bookdown::pdf_document2:
-    keep_tex: false
-    toc: false
-    toc_depth: 1
-    number_sections: true
-    #fig_width: 3
-    #fig_height: 1
-    fig_caption: true
-    fig_crop: true
-    df_print: kable
-    highlight: tango
-    includes:
-      in_header: /home/adrien/github/dotfiles/tex/rmd-preamble.tex
-fontawesome: yes
-css: [/home/adrien/github/dotfiles/rmd/columns.css]
+    theme: leonids
+    #theme: cayman, tactile, architect, hpstr
+css: [xaringan-themer.css,/home/adrien/github/dotfiles/rmd/columns.css]
 ---
 
-<style>
-body {
-text-align: justify}
-</style>
-
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_mono_accent(
+  base_color = "#000F08",
+  colors = c(
+  black = "#282c34",
+  red = "#e06c75",
+  purple = "#C678DD",
+  greyc = "#ABB2BF",
+  cyan = "#56B6C2",
+  green = "#98C379",
+  yellow = "#E5C07B",
+  blue = "#61AFEF"
+)
+      )
+# style_duo(primary_color = "#e06c75", secondary_color = "#282c34")
+```
 
 ```{r setup, include = FALSE}
 source('/home/adrien/github/dotfiles/r/rmarkdown-template.R')
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE, fig.align = "center")
-
 ```
-
-`r ifpdf("", "[*(Download PDF)*](index.pdf)")`
 
 # Principes
 

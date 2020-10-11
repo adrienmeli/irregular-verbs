@@ -8,10 +8,18 @@ always_allow_html: true
 link-citations: true
 numbersections: true
 fontsize: 10pt
+output:
 output: 
-  prettydoc::html_pretty:
-    theme: architect
-    self_contained: true
+  rmdformats::html_docco
+  bookdown::html_document2:
+    toc: false
+    toc_float: true
+    toc_depth: 2
+    number_sections: false
+    theme: yeti
+    # I like hyphenated themes
+    #-default, cerulean, journal, -flatly, darkly, readable, -spacelab, united, -cosmo, lumen, paper, -sandstone, simplex, and -yeti
+    css: [/home/adrien/github/dotfiles/rmd/columns.css]
     highlight: haddock
     fig_width: 4
     fig_height: 3
@@ -30,7 +38,6 @@ output:
     includes:
       in_header: /home/adrien/github/dotfiles/tex/rmd-preamble.tex
 fontawesome: yes
-css: [/home/adrien/github/dotfiles/rmd/columns.css]
 ---
 
 <style>

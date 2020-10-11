@@ -17,7 +17,7 @@ output:
     fig_caption: true
     use_bookdown: false
   bookdown::pdf_document2:
-    keep_tex: false
+    keep_tex: true
     toc: false
     toc_depth: 1
     number_sections: true
@@ -28,7 +28,9 @@ output:
     df_print: kable
     highlight: tango
     includes:
-      in_header: /home/adrien/github/dotfiles/tex/rmd-preamble.tex
+      in_header: /home/adrien/github/dotfiles/rmd/rmd-preamble.tex
+      before_body: /home/adrien/github/dotfiles/rmd/before_body.tex
+      after_body: /home/adrien/github/dotfiles/rmd/after_body.tex
 fontawesome: yes
 css: [/home/adrien/github/dotfiles/rmd/columns.css]
 ---
@@ -112,6 +114,10 @@ Le participe passé s'emploie avec *HAVE* ou *BE*.
 ## Conjugaisons de "BE"
 
 
+:::::: {.columns}
+
+
+::: {.column width="47%" data-latex="{0.47\textwidth}"}
 
 
 ### "BE" au présent
@@ -138,6 +144,15 @@ kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive
 } 
 ```
 
+:::
+
+::: {.column width="6%" data-latex="{0.06\textwidth}"}
+\
+<!-- an empty Div (with a white space), serving as
+a column separator -->
+:::
+
+::: {.column width="47%" data-latex="{0.47\textwidth}"}
 
 
 ### "BE" au prétérit
@@ -163,6 +178,15 @@ kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive
 
 } 
 ```
+
+:::
+::::::
+
+
+
+
+
+
 
 
 ***

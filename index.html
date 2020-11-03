@@ -10,7 +10,7 @@
 
 <meta name="author" content="Adrien Méli" />
 
-<meta name="date" content="2020-10-28" />
+<meta name="date" content="2020-11-03" />
 
 <title>Les verbes irréguliers anglais</title>
 <!-- Material Design fonts -->
@@ -918,6 +918,45 @@ padding: 8px 15px;
 
 });
 </script>
+<style type="text/css">
+a.anchor-section {margin-left: 10px; visibility: hidden; color: inherit;}
+a.anchor-section::before {content: '#';}
+.hasAnchor:hover a.anchor-section {visibility: visible;}
+</style>
+<script>// Anchor sections v1.0 written by Atsushi Yasumoto on Oct 3rd, 2020.
+document.addEventListener('DOMContentLoaded', function() {
+  // Do nothing if AnchorJS is used
+  if (typeof window.anchors === 'object' && anchors.hasOwnProperty('hasAnchorJSLink')) {
+    return;
+  }
+
+  const h = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+
+  // Do nothing if sections are already anchored
+  if (Array.from(h).some(x => x.classList.contains('hasAnchor'))) {
+    return null;
+  }
+
+  // Use section id when pandoc runs with --section-divs
+  const section_id = function(x) {
+    return ((x.classList.contains('section') || (x.tagName === 'SECTION'))
+            ? x.id : '');
+  };
+
+  // Add anchors
+  h.forEach(function(x) {
+    const id = x.id || section_id(x.parentElement);
+    if (id === '') {
+      return null;
+    }
+    let anchor = document.createElement('a');
+    anchor.href = '#' + id;
+    anchor.classList = ['anchor-section'];
+    x.classList.add('hasAnchor');
+    x.appendChild(anchor);
+  });
+});
+</script>
 <script>$(document).ready(function(){
     if (typeof $('[data-toggle="tooltip"]').tooltip === 'function') {
         $('[data-toggle="tooltip"]').tooltip();
@@ -957,9 +996,16 @@ background-color: #f5f5f5;
 }
 .lightable-classic {
 border-top: 0.16em solid #111111;
+border-bottom: 0.16em solid #111111;
 width: 100%;
 margin-bottom: 10px;
 margin: 10px 5px;
+}
+.lightable-classic tfoot tr td {
+border: 0;
+}
+.lightable-classic tfoot tr:first-child td {
+border-top: 0.14em solid #111111;
 }
 .lightable-classic caption {
 color: #222222;
@@ -978,9 +1024,6 @@ color: #222222;
 .lightable-classic thead tr:last-child th {
 border-bottom: 0.10em solid #111111;
 }
-.lightable-classic tbody tr:last-child td {
-border-bottom: 0.14em solid #111111;
-}
 .lightable-classic.lightable-hover tbody tr:hover {
 background-color: #F9EEC1;
 }
@@ -989,8 +1032,15 @@ background-color: #f5f5f5;
 }
 .lightable-classic-2 {
 border-top: 3px double #111111;
+border-bottom: 3px double #111111;
 width: 100%;
 margin-bottom: 10px;
+}
+.lightable-classic-2 tfoot tr td {
+border: 0;
+}
+.lightable-classic-2 tfoot tr:first-child td {
+border-top: 3px double #111111;
 }
 .lightable-classic-2 caption {
 color: #222222;
@@ -1027,6 +1077,12 @@ border: 1px solid #EEE;
 border-collapse: collapse;
 margin-bottom: 10px;
 }
+.lightable-material tfoot tr td {
+border: 0;
+}
+.lightable-material tfoot tr:first-child td {
+border-top: 1px solid #EEE;
+}
 .lightable-material th {
 height: 56px;
 padding-left: 16px;
@@ -1060,6 +1116,12 @@ border-collapse: collapse;
 margin-bottom: 10px;
 background-color: #363640;
 }
+.lightable-material-dark tfoot tr td {
+border: 0;
+}
+.lightable-material-dark tfoot tr:first-child td {
+border-top: 1px solid #FFFFFF12;
+}
 .lightable-material-dark th {
 height: 56px;
 padding-left: 16px;
@@ -1089,6 +1151,12 @@ border-bottom: 1px solid #FFFFFF12;
 width: 100%;
 margin-bottom: 10px;
 color: #444;
+}
+.lightable-paper tfoot tr td {
+border: 0;
+}
+.lightable-paper tfoot tr:first-child td {
+border-top: 1px solid #00000020;
 }
 .lightable-paper thead tr:last-child th {
 color: #666;
@@ -1173,7 +1241,7 @@ $(document).ready(function () {
         <div id="header">
     <h1 class="title">Les verbes irréguliers anglais</h1>
                 <h4 class="author">Adrien Méli</h4>
-                <h4 class="date">October 28, 2020</h4>
+                <h4 class="date">November 03, 2020</h4>
         </div>
     </div>
 </div>
@@ -1238,11 +1306,11 @@ text-align: justify}
 <ul>
 <li><strong>Avec <em>HAVE</em> :</strong> Le participe passé permet de renvoyer à une action qui est envisagée comme passée. Le fait qu’il ne soit pas conjugué permet de combiner ce renvoi au passé avec l’expression d’hypothèses ou de situations irréelles.
 <ul>
-<li>Exemple : <em>John must have forgotten</em> <span class="math inline">\(\rightarrow\)</span> “John a dû oublier”.</li>
+<li>Exemple : <em>John must have forgotten</em> <span class="math inline">\(\rightarrow\)</span> “John a dû oublier.”</li>
 </ul></li>
 <li><strong>Avec <em>BE</em> :</strong> le participe passé revêt alors un <strong><span style="color: #f44336;">sens passif</span></strong>. Le sujet du verbe subit l’action.
 <ul>
-<li>Exemple : <em>The book was written in 1932</em> <span class="math inline">\(\rightarrow\)</span> “Le livre a été écrit en 1932”.</li>
+<li>Exemple : <em>The book was written in 1932</em> <span class="math inline">\(\rightarrow\)</span> “Le livre a été écrit en 1932.”</li>
 </ul></li>
 </ul>
 <hr />

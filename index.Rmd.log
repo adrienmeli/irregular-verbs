@@ -4,4 +4,13 @@ processing file: index.Rmd
 output file: index.knit.md
 
 
+Output created: index.html
+
+
+processing file: index.Rmd
+output file: index.knit.md
+
+
 Output created: index.pdf
+Warning message:
+MathJax doesn't work with self_contained when not using the rmarkdown "default" template. 

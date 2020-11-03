@@ -9,7 +9,7 @@ link-citations: true
 numbersections: true
 fontsize: 10pt
 output: 
-  rmdformats::material:
+  rmdformats::robobook:
     self_contained: true
     highlight: haddock
     fig_width: 4
@@ -52,6 +52,7 @@ knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE, fig.align 
 
 # Principes
 
+`r ifpdf("", "[*(Download PDF)*](index.pdf)")`
 
 Les verbes irréguliers s'apprennent en trois colonnes : 
 
@@ -222,4 +223,3 @@ kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive
 } 
 ```
 
-# `r ifpdf("", "[*(Download PDF)*](index.pdf)")`

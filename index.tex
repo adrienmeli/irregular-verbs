@@ -5,14 +5,13 @@
 \documentclass[
   10pt,
 ]{article}
+\usepackage{amsmath,amssymb}
 \usepackage{lmodern}
-\usepackage{amsmath}
 \usepackage{ifxetex,ifluatex}
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
   \usepackage{textcomp} % provide euro and other symbols
-  \usepackage{amssymb}
 \else % if luatex or xetex
   \usepackage{unicode-math}
   \defaultfontfeatures{Scale=MatchLowercase}
@@ -44,7 +43,7 @@
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
 \usepackage[margin=1in]{geometry}
-\usepackage{longtable,booktabs}
+\usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
@@ -95,6 +94,7 @@
 \usepackage{tikz}
 \usepackage{graphicx}
 \usepackage[light, sfdefault]{roboto}
+%\usepackage[left=1.5cm,right=1.5cm,top=1.5cm,bottom=1.5cm]{geometry}
 
 %\renewcommand*\familydefault{\sfdefault} 
 \renewcommand{\rmdefault}{ptm}
@@ -114,31 +114,43 @@
 % -----------------------------------------------------------------
 % Hyper Setup
 % -----------------------------------------------------------------
+%\hypersetup{
+%    %bookmarks=true,         % show bookmarks bar?
+%    unicode=false,          % non-Latin characters in Acrobat�s bookmarks
+%    pdftoolbar=true,        % show Acrobat�s toolbar?
+%    pdfmenubar=true,        % show Acrobat�s menu?
+%    pdffitwindow=false,     % window fit to page when opened
+%    pdfstartview={FitH},    % fits the width of the page to the window
+%    %pdftitle={},    % title
+%    pdfauthor={Adrien Meli},     % author 
+%    pdfsubject={Phonological rules},   % subject of the document
+%    pdfcreator={Creator},   % creator of the document
+%    pdfproducer={Producer}, % producer of the document
+%    pdfkeywords={Second Language Acquisition, French, English, phonology}, % list of keywords
+%    pdfnewwindow=true,     % links in new window
+%    colorlinks=true,       % false: boxed links; true: colored links
+%    linkcolor=#145680,          % color of internal links
+%    citecolor=black,        % color of links to bibliography
+%    filecolor=magenta,      % color of file links
+%    urlcolor=blue,           % color of external links
+%    bookmarksopen=false,
+%    anchorcolor=black,
+%    bookmarksnumbered=true,
+%    pdfpagemode=UseOutlines,    %None/UseOutlines/UseThumbs/FullScreen
+%    linktocpage=true
+%}
+%\newcommand\myshade{85}
+%\colorlet{mylinkcolor}{violet}
+%\colorlet{mycitecolor}{YellowOrange}
+%\colorlet{myurlcolor}{Aquamarine}
+
 \hypersetup{
-    %bookmarks=true,         % show bookmarks bar?
-    unicode=false,          % non-Latin characters in Acrobat�s bookmarks
-    pdftoolbar=true,        % show Acrobat�s toolbar?
-    pdfmenubar=true,        % show Acrobat�s menu?
-    pdffitwindow=false,     % window fit to page when opened
-    pdfstartview={FitH},    % fits the width of the page to the window
-    %pdftitle={},    % title
-    pdfauthor={Adrien Meli},     % author 
-    pdfsubject={Phonological rules},   % subject of the document
-    pdfcreator={Creator},   % creator of the document
-    pdfproducer={Producer}, % producer of the document
-    pdfkeywords={Second Language Acquisition, French, English, phonology}, % list of keywords
-    pdfnewwindow=true,     % links in new window
-    colorlinks=true,       % false: boxed links; true: colored links
-    linkcolor=black,          % color of internal links
-    citecolor=black,        % color of links to bibliography
-    filecolor=magenta,      % color of file links
-    urlcolor=blue,           % color of external links
-    bookmarksopen=false,
-    anchorcolor=black,
-    bookmarksnumbered=true,
-    pdfpagemode=UseOutlines,    %None/UseOutlines/UseThumbs/FullScreen
-    linktocpage=true
+  linkcolor  = darkPrimaryColor,
+  citecolor  = accentColor,
+  urlcolor   = darkPrimaryColor,
+  colorlinks = true,
 }
+
 
 % ********************Captions and Hyperreferencing / URL **********************
 
@@ -255,12 +267,12 @@
 % DEFINING HEADERS
 % -----------------------------------------------------------------
 
-\lhead{}
+%\lhead{}
 \chead{}
 \rhead{\tiny{\today}}
 \lfoot{}
 \cfoot{\thepage}
-\rfoot{\tiny Adrien M\'{e}li \textcopyright \the\year}
+%\rfoot{\tiny Adrien M\'{e}li \textcopyright \the\year}
 \renewcommand{\headrulewidth}{0.1mm}
 \renewcommand{\footrulewidth}{0.1mm}
 
@@ -276,12 +288,12 @@
 
 \title{Les verbes irréguliers anglais}
 \author{Adrien Méli}
-\date{December 16, 2020}
+\date{February 11, 2021}
 
 \begin{document}
 \maketitle
 
-\pagestyle{fancy}
+%\pagestyle{fancy}
 %\begin{linenumbers}[1]
 %  \modulolinenumbers[5]
 

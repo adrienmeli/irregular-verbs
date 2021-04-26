@@ -5,13 +5,14 @@
 \documentclass[
   10pt,
 ]{article}
-\usepackage{amsmath,amssymb}
 \usepackage{lmodern}
+\usepackage{amsmath}
 \usepackage{ifxetex,ifluatex}
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
   \usepackage{textcomp} % provide euro and other symbols
+  \usepackage{amssymb}
 \else % if luatex or xetex
   \usepackage{unicode-math}
   \defaultfontfeatures{Scale=MatchLowercase}
@@ -43,8 +44,7 @@
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
 \usepackage[margin=1in]{geometry}
-\usepackage{longtable,booktabs,array}
-\usepackage{calc} % for calculating minipage widths
+\usepackage{longtable,booktabs}
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
 \makeatletter
@@ -87,6 +87,7 @@
 \usepackage{colortbl}
 %\usepackage{tufte-book}
 \usepackage{xcolor}
+\usepackage{longtable}
 %\usepackage{fourier}
 %\usepackage{montserrat}
 %\usepackage[french]{babel}
@@ -288,7 +289,7 @@
 
 \title{Les verbes irréguliers anglais}
 \author{Adrien Méli}
-\date{March 03, 2021}
+\date{April 26, 2021}
 
 \begin{document}
 \maketitle
@@ -393,60 +394,45 @@ Ils sont appelés ``réguliers'' parce que leur prétérit et leur participe pas
 \hypertarget{conjugaisons-de-be}{%
 \subsection{Conjugaisons de ``BE''}\label{conjugaisons-de-be}}
 
-\begin{column}{0.47\textwidth}
-
 \hypertarget{be-au-pruxe9sent}{%
 \subsubsection{``BE'' au présent}\label{be-au-pruxe9sent}}
 
-\begin{table}
+\begin{table}[!h]
 \centering
 \begin{tabular}{ll}
-\toprule{}
+\toprule
 Singulier & Pluriel\\
-\midrule{}
+\midrule
 \cellcolor{gray!6}{am} & \cellcolor{gray!6}{are}\\
 are & are\\
 \cellcolor{gray!6}{is} & \cellcolor{gray!6}{are}\\
-\bottomrule{}
+\bottomrule
 \end{tabular}
 \end{table}
-
-\end{column}
-
-\begin{column}{0.06\textwidth}
-\\
-
-\end{column}
-
-\begin{column}{0.47\textwidth}
 
 \hypertarget{be-au-pruxe9tuxe9rit}{%
 \subsubsection{``BE'' au prétérit}\label{be-au-pruxe9tuxe9rit}}
 
-\begin{table}
+\begin{table}[!h]
 \centering
 \begin{tabular}{ll}
-\toprule{}
+\toprule
 Singulier & Pluriel\\
-\midrule{}
+\midrule
 \cellcolor{gray!6}{was} & \cellcolor{gray!6}{\vphantom{1} were}\\
 were & were\\
 \cellcolor{gray!6}{was} & \cellcolor{gray!6}{were}\\
-\bottomrule{}
+\bottomrule
 \end{tabular}
 \end{table}
-
-\end{column}
-
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
 \hypertarget{tableau-des-verbes-irruxe9guliers}{%
 \section{Tableau des verbes irréguliers}\label{tableau-des-verbes-irruxe9guliers}}
 
 \begin{longtable}{>{}lll>{}l}
-\toprule{}
+\toprule
 Base Verbale & Prétérit & Participe passé & Traduction\\
-\midrule{}
+\midrule
 \cellcolor{gray!6}{\textbf{beat}} & \cellcolor{gray!6}{beat} & \cellcolor{gray!6}{beaten} & \cellcolor{gray!6}{\textbf{battre (coeur)}}\\
 \textbf{become} & became & become & \textbf{devenir}\\
 \cellcolor{gray!6}{\textbf{begin}} & \cellcolor{gray!6}{began} & \cellcolor{gray!6}{begun} & \cellcolor{gray!6}{\textbf{commencer}}\\
@@ -575,7 +561,7 @@ Base Verbale & Prétérit & Participe passé & Traduction\\
 \addlinespace
 \textbf{win} & won & won & \textbf{gagner}\\
 \cellcolor{gray!6}{\textbf{write}} & \cellcolor{gray!6}{wrote} & \cellcolor{gray!6}{written} & \cellcolor{gray!6}{\textbf{écrire}}\\
-\bottomrule{}
+\bottomrule
 \end{longtable}
 
 %\end{linenumbers}

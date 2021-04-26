@@ -9,7 +9,7 @@ link-citations: true
 numbersections: true
 fontsize: 10pt
 output: 
-  rmdformats::material:
+  rmdformats::robobook:
     self_contained: true
     highlight: haddock
     fig_width: 4
@@ -41,17 +41,20 @@ text-align: justify}
 </style>
 
 
-```{r setup, include = FALSE}
-source('/home/adrien/github/dotfiles/r/rmarkdown-template.R')
-knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE, fig.align = "center")
 
+```{r, include=FALSE, warning=FALSE}
+source('/home/adrien/github/dotfiles/r/rmarkdown-template.R')
+knitr::opts_chunk$set(fig.pos = "!H", out.extra = "", cache = FALSE, echo = FALSE, warning = FALSE, message = FALSE, fig.align = "center")
+options(rmarkdown.html_vignette.check_title = FALSE)
 ```
+ 
 
 
 
 
 # Principes
 
+`r ifpdf("", "[*(Download PDF)*](https://github.com/adrienmeli/irregular-verbs/raw/master/index.pdf)")`
 
 Les verbes irréguliers s'apprennent en trois colonnes : 
 
@@ -113,13 +116,6 @@ Le participe passé s'emploie avec *HAVE* ou *BE*.
 
 ## Conjugaisons de "BE"
 
-
-:::::: {.columns}
-
-
-::: {.column width="47%" data-latex="{0.47\textwidth}"}
-
-
 ### "BE" au présent
 
 ```{r bepresent}
@@ -131,8 +127,7 @@ if (knitr::is_latex_output()) {
   knitr::kable(df, "latex", booktabs = T) %>%
   # column_spec(1, bold = T, width = "3cm") %>%
   # collapse_rows(columns = 1:2, valign = "top",latex_hline = "none") %>%
-  kable_styling(latex_options = c( "striped"),position = "center")
-  #kable_styling(latex_options = c("striped"),position = "center")
+  kable_styling(latex_options = c( "striped", "hold_position"),position = "center")
 
 } else if (knitr::is_html_output()) {
 #knitr::kable(df, col.names=NULL, captions=NULL) %>%
@@ -143,17 +138,6 @@ kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive
 
 } 
 ```
-
-:::
-
-::: {.column width="6%" data-latex="{0.06\textwidth}"}
-\
-<!-- an empty Div (with a white space), serving as
-a column separator -->
-:::
-
-::: {.column width="47%" data-latex="{0.47\textwidth}"}
-
 
 ### "BE" au prétérit
 
@@ -166,7 +150,7 @@ if (knitr::is_latex_output()) {
   knitr::kable(df, "latex", booktabs = T) %>%
   # column_spec(1, bold = T, width = "3cm") %>%
   # collapse_rows(columns = 1:2, valign = "top",latex_hline = "none") %>%
-  kable_styling(latex_options = c( "striped"),position = "center")
+  kable_styling(latex_options = c( "striped", "hold_position"),position = "center")
   #kable_styling(latex_options = c("striped"),position = "center")
 
 } else if (knitr::is_html_output()) {
@@ -179,17 +163,6 @@ kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive
 } 
 ```
 
-:::
-::::::
-
-
-
-
-
-
-
-
-***
 
 # Tableau des verbes irréguliers
 
@@ -222,4 +195,3 @@ kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive
 } 
 ```
 
-# `r ifpdf("", "[*(Download PDF)*](index.pdf)")`
